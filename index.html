@@ -3,80 +3,295 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Aksh B Patel - Software Developer</title>
+  <title>Aksh B Patel — AI/ML Engineer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Syne:wght@400;700;800&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
-  <!-- 3D Background Canvas -->
-  <canvas id="bg"></canvas>
 
-  <!-- Main Content -->
-  <main>
-    <!-- Hero Section -->
-    <section id="hero">
-      <h1>Aksh B Patel</h1>
-      <p>Building the future, one line of code at a time.</p>
-      <a href="#projects" class="cta-button">Explore My Work</a>
-    </section>
+  <!-- Custom Cursor -->
+  <div class="cursor-dot"></div>
+  <div class="cursor-ring"></div>
 
-    <!-- About Section -->
-    <section id="about">
-      <h2>About Me</h2>
-      <div class="glass-card">
-        <p>Hi! I'm a Computer Science Student with a passion for creating scalable and efficient solutions. I specialize in <strong>Python</strong>, and <strong>Machine Learning </strong>.</p>
-        <div class="skills">
-          <span>Python</span>
-          <span>React</span>
-          <span>Machine Learning & Deep Learning</span>
-          <span>C/C++</span>
-          <span>Git/GitHub</span>
-          <span>Docker</span>
+  <!-- Noise overlay -->
+  <div class="noise"></div>
+
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="nav-logo">ABP<span class="blink">_</span></div>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#experience">Exp</a></li>
+      <li><a href="#projects">Work</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="hero">
+    <canvas id="bg"></canvas>
+    <div class="hero-content">
+      <div class="hero-tag">[ Available for opportunities ]</div>
+      <h1 class="hero-name">
+        <span class="line-reveal">Aksh B</span>
+        <span class="line-reveal delay-1">Patel</span>
+      </h1>
+      <div class="hero-role">
+        <span class="role-static">I build </span>
+        <span class="role-typed" id="typed-text"></span>
+        <span class="cursor-type">|</span>
+      </div>
+      <p class="hero-sub fade-up">CS undergrad @ NIE Mysuru · AI/ML Engineer · Software Testing Intern</p>
+      <div class="hero-cta fade-up">
+        <a href="#projects" class="btn-primary">View My Work</a>
+        <a href="mailto:akshbpatel1172004@gmail.com" class="btn-ghost">Get In Touch</a>
+      </div>
+    </div>
+    <div class="hero-scroll-hint">scroll ↓</div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about">
+    <div class="section-label">// 01 — ABOUT</div>
+    <div class="about-grid">
+      <div class="about-text">
+        <h2 class="section-heading reveal">Who I Am</h2>
+        <p class="reveal delay-1">Computer Science graduate specialising in <strong>AI & ML</strong>, with a sharp eye for software quality. Currently interning as a <strong>Software Testing Engineer</strong> at Lumos Learning while building intelligent systems on the side.</p>
+        <p class="reveal delay-2">I like working at the intersection of machine learning and real-world applications — from reinforcement learning models to multi-document RAG systems. I also teach: I've instructed BCA students in AI fundamentals, because sharing knowledge is part of the craft.</p>
+        <div class="about-stats reveal delay-3">
+          <div class="stat"><span>7.35</span><small>CGPA (B.E)</small></div>
+          <div class="stat"><span>9.03</span><small>CGPA (Diploma)</small></div>
+          <div class="stat"><span>2+</span><small>AI/ML Projects</small></div>
         </div>
       </div>
-    </section>
-
-    <!-- Projects Section -->
-    <section id="projects">
-      <h2>Projects</h2>
-      <div class="project-grid">
-        <div class="project-card">
-          <h3>Banglore House Price Prediction using Deep Learning Techniques.</h3>
-          <p>A deep learning model using neural networks to estimate house prices based on key real estate features.</p>
-          <a href="https://house-price-prediction-11.streamlit.app/" class="project-link">View Project →</a>
+      <div class="about-skills reveal delay-2">
+        <div class="skills-title">Tech Stack</div>
+        <div class="skill-group">
+          <div class="skill-group-label">Languages</div>
+          <div class="skill-tags">
+            <span>Python</span><span>C</span><span>SQL</span>
+          </div>
         </div>
-        <div class="project-card">
-          <h3>Crop Yield Prediction</h3>
-          <p>A machine learning model using data preprocessing and XGBoost regression to predict crop yield, helping farmers make informed decisions.</p>
-          <a href="https://crop-prediction-11.streamlit.app/" class="project-link">View Project →</a>
+        <div class="skill-group">
+          <div class="skill-group-label">AI / ML</div>
+          <div class="skill-tags">
+            <span>Machine Learning</span><span>Deep Learning</span><span>NLP</span><span>Generative AI</span><span>MLflow</span>
+          </div>
         </div>
-        <div class="project-card">
-          <h3>Project 3</h3>
-          <p>A brief description of the project and technologies used.</p>
-          <a href="#" class="project-link">View Project →</a>
+        <div class="skill-group">
+          <div class="skill-group-label">Tools</div>
+          <div class="skill-tags">
+            <span>Docker</span><span>GitHub</span><span>Selenium</span><span>Playwright</span><span>Neo4j</span><span>FAISS</span>
+          </div>
         </div>
-      </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact">
-      <h2>Contact</h2>
-      <div class="glass-card">
-        <p>Let's collaborate! Reach out to me via email or connect on social media.</p>
-        <div class="social-links">
-          <a href="mailto:akshbpatel1172004@gmail.com"><i class="fas fa-envelope"></i></a>
-          <a href="https://github.com/akshpatel07"><i class="fab fa-github"></i></a>
-          <a href="https://www.linkedin.com/in/aksh-b-patel-002450237?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fab fa-linkedin"></i></a>
+        <div class="skill-group">
+          <div class="skill-group-label">Frameworks</div>
+          <div class="skill-tags">
+            <span>Streamlit</span><span>LangChain</span><span>React</span>
+          </div>
         </div>
       </div>
-    </section>
-  </main>
+    </div>
+  </section>
 
-  <!-- Three.js Script -->
+  <!-- Experience Section -->
+  <section id="experience">
+    <div class="section-label">// 02 — EXPERIENCE</div>
+    <h2 class="section-heading reveal">Where I've Worked</h2>
+    <div class="timeline">
+      <div class="timeline-item reveal">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content glass-card tilt-card">
+          <div class="timeline-header">
+            <div>
+              <h3>Software Testing Intern</h3>
+              <div class="company">Lumos Learning</div>
+            </div>
+            <div class="timeline-date">Jan 2026 — Present</div>
+          </div>
+          <ul>
+            <li>Designed and executed test cases for functional, smoke, sanity & regression testing on web-based applications.</li>
+            <li>Identified, logged and tracked defects across the full defect life cycle.</li>
+            <li>Automated testing workflows using <strong>Selenium</strong>; currently advancing with <strong>Playwright</strong>.</li>
+            <li>Collaborated closely with dev teams to verify bug fixes and ensure quality releases.</li>
+          </ul>
+          <div class="card-tags">
+            <span>Manual Testing</span><span>Selenium</span><span>Playwright</span><span>STLC</span><span>SDLC</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="timeline-item reveal delay-1">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content glass-card tilt-card">
+          <div class="timeline-header">
+            <div>
+              <h3>AI Instructor</h3>
+              <div class="company">BCA Department (Freelance)</div>
+            </div>
+            <div class="timeline-date">2024</div>
+          </div>
+          <ul>
+            <li>Taught BCA final-year students the fundamentals of AI and practical applications.</li>
+            <li>Designed curriculum covering ML pipelines, model evaluation, and real-world use cases.</li>
+          </ul>
+          <div class="card-tags">
+            <span>Teaching</span><span>AI Fundamentals</span><span>Curriculum Design</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="timeline-item reveal delay-2">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content glass-card tilt-card">
+          <div class="timeline-header">
+            <div>
+              <h3>Core Member</h3>
+              <div class="company">Anveshan Club — NIE</div>
+            </div>
+            <div class="timeline-date">2023 — 2025</div>
+          </div>
+          <ul>
+            <li>Organised workshops, seminars, and knowledge-sharing sessions for the college tech community.</li>
+          </ul>
+          <div class="card-tags">
+            <span>Community</span><span>Workshops</span><span>Leadership</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects">
+    <div class="section-label">// 03 — PROJECTS</div>
+    <h2 class="section-heading reveal">Things I've Built</h2>
+    <div class="project-grid">
+
+      <div class="project-card tilt-card reveal">
+        <div class="project-number">01</div>
+        <div class="project-glow"></div>
+        <h3>RL-Based Cyber Threat Detection</h3>
+        <p>Real-time attack mitigation using a Deep Q-Network (DQN) with NASIM. Integrated a Cyber Knowledge Graph via Graphker & Neo4j and a GenAI interface for Cypher-based threat analysis using Groq & Gemini.</p>
+        <div class="project-stack">
+          <span>DQN / RL</span><span>Neo4j</span><span>Groq</span><span>Gemini</span><span>Streamlit</span>
+        </div>
+        <div class="project-date">Feb 2025 — Mar 2025</div>
+      </div>
+
+      <div class="project-card tilt-card reveal delay-1">
+        <div class="project-number">02</div>
+        <div class="project-glow"></div>
+        <h3>Multi-Document Q&A System</h3>
+        <p>Streamlit app for querying multiple PDFs using retrieval-augmented generation. Built with LangChain, FAISS for vector storage, and Groq/Gemini embeddings for real-time question answering.</p>
+        <div class="project-stack">
+          <span>LangChain</span><span>FAISS</span><span>RAG</span><span>Groq</span><span>Streamlit</span>
+        </div>
+        <div class="project-date">Oct 2024 — Nov 2024</div>
+      </div>
+
+      <div class="project-card tilt-card reveal delay-2">
+        <div class="project-number">03</div>
+        <div class="project-glow"></div>
+        <h3>Bangalore House Price Prediction</h3>
+        <p>Neural network model estimating house prices based on real estate features. Deployed as an interactive app on Streamlit Cloud.</p>
+        <div class="project-stack">
+          <span>Deep Learning</span><span>Neural Networks</span><span>Streamlit</span>
+        </div>
+        <a href="https://house-price-prediction-11.streamlit.app/" class="project-link" target="_blank">Live Demo →</a>
+      </div>
+
+      <div class="project-card tilt-card reveal delay-3">
+        <div class="project-number">04</div>
+        <div class="project-glow"></div>
+        <h3>Crop Yield Prediction</h3>
+        <p>ML model using XGBoost regression and data preprocessing to predict crop yield, enabling data-driven agricultural decisions.</p>
+        <div class="project-stack">
+          <span>XGBoost</span><span>Scikit-learn</span><span>Streamlit</span>
+        </div>
+        <a href="https://crop-prediction-11.streamlit.app/" class="project-link" target="_blank">Live Demo →</a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Education Section -->
+  <section id="education">
+    <div class="section-label">// 04 — EDUCATION</div>
+    <h2 class="section-heading reveal">Academic Journey</h2>
+    <div class="edu-grid">
+      <div class="edu-card glass-card tilt-card reveal">
+        <div class="edu-year">2022 — 2026</div>
+        <h3>B.E. Computer Science (AI & ML)</h3>
+        <div class="edu-school">The National Institute of Engineering</div>
+        <div class="edu-score">CGPA: <strong>7.35 / 10</strong></div>
+      </div>
+      <div class="edu-card glass-card tilt-card reveal delay-1">
+        <div class="edu-year">2020 — 2023</div>
+        <h3>Diploma in Computer Science</h3>
+        <div class="edu-school">Polytechnic Arakere</div>
+        <div class="edu-score">CGPA: <strong>9.03 / 10</strong></div>
+      </div>
+      <div class="edu-card glass-card tilt-card reveal delay-2">
+        <div class="edu-year">2019 — 2020</div>
+        <h3>Class 10 — CBSE</h3>
+        <div class="edu-school">Chinmaya Vidyalaya English Medium School</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Certifications -->
+  <section id="certs">
+    <div class="section-label">// 05 — CERTIFICATIONS</div>
+    <h2 class="section-heading reveal">Credentials</h2>
+    <div class="cert-grid">
+      <div class="cert-card reveal glass-card">
+        <div class="cert-icon">✦</div>
+        <div>
+          <h4>Fundamentals of Digital Marketing</h4>
+          <span>Google</span>
+        </div>
+      </div>
+      <div class="cert-card reveal delay-1 glass-card">
+        <div class="cert-icon">✦</div>
+        <div>
+          <h4>Python Programming (Basics)</h4>
+          <span>Webnet Solutions</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <div class="section-label">// 06 — CONTACT</div>
+    <div class="contact-inner reveal">
+      <h2 class="section-heading">Let's Build Something.</h2>
+      <p>Open to internship opportunities, freelance projects, and interesting conversations about AI, ML, or software quality.</p>
+      <a href="mailto:akshbpatel1172004@gmail.com" class="btn-primary big">akshbpatel1172004@gmail.com</a>
+      <div class="social-row">
+        <a href="https://github.com/akshpatel07" target="_blank" class="social-link">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.44 9.8 8.2 11.39.6.11.82-.26.82-.58v-2.03c-3.34.72-4.04-1.61-4.04-1.61-.54-1.38-1.33-1.75-1.33-1.75-1.09-.74.08-.73.08-.73 1.2.08 1.84 1.24 1.84 1.24 1.07 1.83 2.8 1.3 3.49.99.11-.78.42-1.3.76-1.6-2.67-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.13-.3-.54-1.52.12-3.18 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 0 1 3-.4c1.02.005 2.04.14 3 .4 2.28-1.55 3.29-1.23 3.29-1.23.66 1.66.25 2.88.12 3.18.77.84 1.24 1.91 1.24 3.22 0 4.61-2.81 5.63-5.48 5.92.43.37.81 1.1.81 2.22v3.29c0 .32.22.7.83.58C20.57 21.8 24 17.3 24 12c0-6.63-5.37-12-12-12z"/></svg>
+          GitHub
+        </a>
+        <a href="https://www.linkedin.com/in/aksh-b-patel-002450237" target="_blank" class="social-link">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.36V9h3.41v1.56h.05c.47-.9 1.63-1.85 3.36-1.85 3.59 0 4.26 2.36 4.26 5.44v6.3zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zm1.78 13.02H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg>
+          LinkedIn
+        </a>
+        <a href="tel:+919483772764" class="social-link">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1-9.4 0-17-7.6-17-17 0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1L6.6 10.8z"/></svg>
+          +91-9483772764
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div>Designed & Built by Aksh B Patel · 2025</div>
+  </footer>
+
   <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
   <script src="app.js"></script>
 </body>
 </html>
-
-
