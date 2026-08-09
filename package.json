@@ -1,0 +1,51 @@
+{
+  "name": "aksh-patel-portfolio",
+  "version": "1.0.0",
+  "description": "QA Automation Engineer Portfolio - Production-ready Next.js app",
+  "author": "Aksh Patel",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "lint:fix": "next lint --fix",
+    "type-check": "tsc --noEmit",
+    "format": "prettier --write \"**/*.{js,jsx,ts,tsx,md}\"",
+    "preview": "next build && next start"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "next": "^14.1.0",
+    "lucide-react": "^0.378.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.3.3",
+    "@types/react": "^18.2.45",
+    "@types/react-dom": "^18.2.18",
+    "@types/node": "^20.10.6",
+    "tailwindcss": "^3.4.1",
+    "postcss": "^8.4.32",
+    "autoprefixer": "^10.4.16",
+    "prettier": "^3.1.1",
+    "eslint": "^8.56.0",
+    "eslint-config-next": "^14.1.0"
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=9.0.0"
+  },
+  "keywords": [
+    "portfolio",
+    "qa-automation",
+    "playwright",
+    "selenium",
+    "test-engineer",
+    "testing",
+    "nextjs",
+    "react",
+    "tailwind"
+  ]
+}
